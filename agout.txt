@@ -1,0 +1,49 @@
+testSystem.cpp
+
+grading student test cases (using instructor buggy file servers)
+--- grading student test case testDeep.cpp  ---
+student test case testDeep.cpp exposed the following instructor buggy file servers: DFHK
+--- grading student test case testDel.cpp  ---
+student test case testDel.cpp exposed the following instructor buggy file servers: DEJLNR
+--- grading student test case testDirBlock.cpp  ---
+student test case testDirBlock.cpp exposed the following instructor buggy file servers: DELN
+--- grading student test case testEdge.cpp  ---
+student test case testEdge.cpp exposed the following instructor buggy file servers: DHJLN
+--- grading student test case testEmpty.cpp  ---
+student test case testEmpty.cpp exposed the following instructor buggy file servers: DFGHO
+--- grading student test case testEthan.cpp  ---
+student test case testEthan.cpp exposed the following instructor buggy file servers: DFM
+--- grading student test case testEx.cpp  ---
+student test case testEx.cpp exposed the following instructor buggy file servers: DFM
+--- grading student test case testExhaustive.cpp  ---
+student test case testExhaustive.cpp exposed the following instructor buggy file servers: CDEFGHJKLNOPR
+--- grading student test case testFill1.cpp  ---
+student test case testFill1.cpp is invalid: caused solution file server to print too much output
+--- grading student test case testFs.cpp  ---
+student test case testFs.cpp exposed the following instructor buggy file servers: DFKLN
+--- grading student test case testFullSys.cpp (initial file system image testFullSys.fs) ---
+hint: student file server generated incorrect output or disk data (@@@ #2837)
+student test case testFullSys.cpp exposed the following instructor buggy file servers: ADEGHIJLNQ
+--- grading student test case testInvalid.cpp  ---
+student test case testInvalid.cpp exposed the following instructor buggy file servers: CDJKLN
+--- grading student test case testMax.cpp  ---
+student test case testMax.cpp exposed the following instructor buggy file servers: CDFKP
+--- grading student test case testMix.cpp  ---
+student test case testMix.cpp exposed the following instructor buggy file servers: DJLN
+--- grading student test case testMultiple.cpp  ---
+student test case testMultiple.cpp exposed the following instructor buggy file servers: CDGJKLN
+--- grading student test case testSmallFill.cpp  ---
+student test case testSmallFill.cpp is invalid: caused an error when using solution file server: file server used too much CPU time (@@@ #109102)
+--- grading student test case testSpec.cpp  ---
+student test case testSpec.cpp exposed the following instructor buggy file servers: DK
+--- grading student test case testSys.cpp  ---
+student test case testSys.cpp exposed the following instructor buggy file servers: F
+--- grading student test case testSys2.cpp (initial file system image testSys2.fs) ---
+hint: student file server generated incorrect output or disk data (@@@ #1544)
+student test case testSys2.cpp exposed the following instructor buggy file servers: CDFJKLMNOQ
+--- grading student test case testSystem.cpp (initial file system image testSystem.fs) ---
+student test case testSystem.cpp exposed the following instructor buggy file servers: FMOQ
+
+student test suite exposed 17 of the 18 instructor buggy file servers: ACDEFGHIJKLMNOPQR (8 out of 8 points)
+
+Hint: the following student test cases exposed the student file server as buggy: testFullSys.cpp testSys2.cpp
