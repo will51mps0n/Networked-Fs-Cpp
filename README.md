@@ -38,7 +38,8 @@ Comprehensive test suite with .fs disk images
 ├── showfs / showfs_macos      # Debugging tool to print FS image
 ├── fs_param.h               # Filesystem constants (e.g., block size, limits)
 ├── fs_client.h              # Client interface
-├── fs_server.h              # Server interface```
+├── fs_server.h              # Server interface
+```
 
 ## Build Instructions
 
