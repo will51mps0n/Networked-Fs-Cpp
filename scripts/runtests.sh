@@ -14,7 +14,7 @@ make clean > /dev/null
 make > /dev/null
 
 TESTS=()
-for f in test*; do
+for f in tests/test*; do
     if [[ -x "$f" && ! -d "$f" && "$f" != *.cpp ]]; then
         FILE_TYPE=$(file "$f")
         if echo "$FILE_TYPE" | grep -q "executable"; then
@@ -26,7 +26,7 @@ done
 echo ""
 echo "Detected test executables:"
 for T in "${TESTS[@]}"; do
-    echo "$T"
+    echo "$(basename "$T")"
 done
 
 BASE_PORT=8000
@@ -41,9 +41,9 @@ for TEST in "${TESTS[@]}"; do
     echo ""
     echo "Running $TEST_NAME on port $PORT..."
 
-    if [[ -f "${TEST_BASE}.fs" ]]; then
-        echo "Loading filesystem image ${TEST_BASE}.fs"
-        $CREATEFS "${TEST_BASE}.fs"
+    if [[ -f "tests/${TEST_BASE}.fs" ]]; then
+        echo "Loading filesystem image tests/${TEST_BASE}.fs"
+        $CREATEFS "tests/${TEST_BASE}.fs"
     else
         echo "Creating empty filesystem"
         $CREATEFS
@@ -66,7 +66,7 @@ for TEST in "${TESTS[@]}"; do
     sleep 0.5
 
     echo "Launching client: $TEST_NAME"
-    "./$TEST_NAME" localhost "$PORT" > /dev/null 2>&1
+    "$TEST" localhost "$PORT" > /dev/null 2>&1
     STATUS=$?
 
     if [[ $STATUS -eq 0 ]]; then

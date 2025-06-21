@@ -53,5 +53,3 @@ clang++ -g -Wall -std=c++17 \
     -L/opt/homebrew/lib \
     testThreads.cpp libfs_client_macos.o \
     -o testThreads
-
-./autotag.sh
