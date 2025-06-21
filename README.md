@@ -2,8 +2,6 @@
 
 This project implements a multithreaded, networked file server with a custom file system, concurrency-safe path traversal, disk block management, and a full automated test suite.
 
-Originally built for a university-level OS course. This version is renamed and modified for demonstration and portfolio use.
-
 ## Features
 
 Hierarchical file and directory structure
