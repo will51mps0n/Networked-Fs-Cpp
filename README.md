@@ -1,5 +1,5 @@
 # Networked fs cpp
-This project was developed as part of an advanced OS course and demonstrates real-world virtual memory management, including COW and file-backed paging.
+This project was developed as part of an advanced OS course and demonstrates real-world systems coding principals.
 
 It implements a multithreaded, networked file server with a custom file system, concurrency-safe path traversal, disk block management, and a full automated test suite.
 
