@@ -52,11 +52,11 @@ Log all file server output to logs/
 
 ## Manual Build
 
-make
-./fs 8000
-./testSpec localhost 8000
-
 Use createfs or createfs_macos to initialize disks before starting fs.
+After initializing an fs on a disk, to run the code you must have two terminals open - one to initialize the host socket, and the other to run the tests for a client side connection
+./fs 8000 (port number) localhost
+and another:
+./test 8000
 
 ## Running Tests
 
