@@ -7,17 +7,11 @@ It implements a multithreaded, networked file server with a custom file system, 
 ## Features
 
 Hierarchical file and directory structure
-
 Multithreaded TCP server with concurrency-safe operations
-
 Boost thread integration
-
 Lock-safe path traversal and disk manipulation
-
 Disk-backed block allocation with createfs/showfs utilities
-
 Custom filesystem client/server API (in fs_client.h, fs_server.h)
-
 Comprehensive test suite with .fs disk images
 
 ## Project Layout
@@ -50,15 +44,10 @@ chmod +x scripts/runtests.sh
 ./scripts/runtests.sh
 
 This script will:
-
 Clean and rebuild all test and server binaries
-
 Detect valid test clients in tests/
-
 Start the file server on unique ports
-
 Load .fs disk images when available, or initialize new ones
-
 Log all file server output to logs/
 
 ## Manual Build
@@ -72,33 +61,21 @@ Use createfs or createfs_macos to initialize disks before starting fs.
 ## Running Tests
 
 To automatically build and run all tests:
-
 ./scripts/runtests.sh
 
 ## This script will:
 
 Detect all executable test clients in tests/
-
 Run each client on a dedicated port
-
 Spawn the server and kill it between tests
-
 Output logs to logs/ for each test case
-
 Example Test Cases
-
 Each test is a C++ binary linked to libfs_client. Some tests use custom .fs images:
-
 testSpec: Validates spec compliance
-
 testInvalid: Exercises error conditions
-
 testSys: Stresses nested directory structure
-
 testMultiple: Concurrent operations
-
 testMaxLength: Boundary checks for filenames and paths
-
 testRecurse: Deep recursive create/delete tests
 
 ## Clean Up
